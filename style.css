@@ -1,0 +1,11 @@
+.hero-background-img {
+  background-image: url(./images/analog-alarm.jpg);
+  background-size: cover;
+  background-position: 0 -350px;
+}
+
+.hero-background-img > .container {
+  min-height: 70vh;
+  margin-left: 10%;
+  padding-top: 25%;
+}
