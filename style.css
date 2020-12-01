@@ -1,3 +1,4 @@
+/* index.html */
 .hero-background-img {
   background-image: url(./images/analog-alarm.jpg);
   background-size: cover;
@@ -8,4 +9,9 @@
   min-height: 70vh;
   margin-left: 10%;
   padding-top: 25%;
+}
+
+/* contact.html */
+.contact > form > .form-group label {
+  padding: 0;
 }
