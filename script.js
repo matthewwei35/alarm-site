@@ -1,18 +1,19 @@
-var start = document.getElementById('start');
-var reset = document.getElementById('reset');
+/* eslint-disable eqeqeq */
+const start = document.getElementById('start');
+const reset = document.getElementById('reset');
 
-var hour =  document.getElementById('hour');
-var minute =  document.getElementById('minute');
-var second =  document.getElementById('second');
+const hour = document.getElementById('hour');
+const minute = document.getElementById('minute');
+const second = document.getElementById('second');
 
 // Store a reference to the variable
-var startTimer = null;
+let startTimer = null;
 
 function timer() {
-  if (hour.value == 0 && minute.value == 0 && second.value == 0) {
-    hour.value == 0;
-    minute.value == 0;
-    second.value == 0;
+  if (hour.value === 0 && minute.value === 0 && second.value === 0) {
+    hour.value = 0;
+    minute.value = 0;
+    second.value = 0;
   } else if (second.value != 0) {
     second.value -= 1;
   } else if (minute.value != 0 && second.value == 0) {
@@ -23,26 +24,25 @@ function timer() {
     second.value = 59;
     hour.value -= 1;
   }
-  return;
 }
 
 function stopTimer() {
   clearInterval(startTimer);
 }
 
-start.addEventListener('click', function(){
+start.addEventListener('click', () => {
   // Initilize the variable startTimer
   function startInterval() {
-    startTimer = setInterval(function() {
+    startTimer = setInterval(() => {
       timer();
     }, 1000);
   }
   startInterval();
-})
+});
 
-reset.addEventListener('click', function(){
+reset.addEventListener('click', () => {
   hour.value = 0;
   minute.value = 0;
   second.value = 0;
   stopTimer();
-})
+});
