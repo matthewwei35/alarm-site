@@ -20,7 +20,7 @@ function timer() {
     second.value = 59;
     minute.value -= 1;
   } else if (hour.value != 0 && minute.value == 0) {
-    minute.value = 60;
+    minute.value = 59;
     second.value = 59;
     hour.value -= 1;
   }
