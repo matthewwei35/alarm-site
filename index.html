@@ -49,6 +49,12 @@
     </div>
 
     <!-- ALARM -->
+    <div id="container">
+      <div id="hour-label" class="label">Hours</div><div id="min-label" class="label">Minutes</div><div id="sec-label" class="label">Seconds</div>
+      <input id="hour" type="number" max="99" min="0" value="0" class="time"><div id="p1" class="semicolon">:</div><input id="minute" type="number" max="60" min="0" value="0" class="time"><div id="p2" class="semicolon">:</div><input id="second" type="number" max="60" min="0" value="0" class="time">
+      <button id="start" class="btn">Start</button>
+      <button id="reset" class="btn">Reset</button>
+    </div>
 
     <script src="script.js"></script>
   </body>
